@@ -20,7 +20,6 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: var(--bg);
   color: #fff;
-  /* min-height: 10000px; */
 }
 
 .navbar {
@@ -134,23 +133,27 @@ body {
 
 /* About Section */
 .about,
-.team {
+.team,
+.achievement {
   padding: 8rem 7% 1.4rem;
 }
 
 .about h2,
-.team h2 {
+.team h2,
+.achievement h2 {
   text-align: center;
   font-size: 2.6rem;
   margin-bottom: 3rem;
 }
 
 .about h2 span,
-.team h2 span {
+.team h2 span,
+.achievement h2 span {
   color: var(--primary);
 }
 
-.about .row {
+.about .row,
+.achievement .row {
   display: flex;
 }
 
@@ -162,12 +165,14 @@ body {
   width: 100%;
 }
 
-.about .row .content {
+.about .row .content,
+.achievement .row .konten {
   flex: 1 1 35rem;
   padding: 0 1rem;
 }
 
-.about .row .content p {
+.about .row .content p,
+.achievement .row .konten p {
   margin-bottom: 0.8rem;
   font-size: 1.3rem;
   font-weight: 100;
@@ -187,20 +192,41 @@ body {
   justify-content: center;
 }
 
-.team .row .team-list {
+.team .row .team-list,
+.achievement .row {
   text-align: center;
   margin: auto 4rem;
 }
 
 .team .row .team-list img {
+  margin-top: 2rem;
   width: auto;
   height: auto;
 }
 
-.team .row .team-list .team-title {
+.team .row .team-list .team-title,
+.achievement .row .lomba-title {
   margin: 2rem auto 1rem;
   font-size: 2.2rem;
-  padding-top: 3rem;
+  margin-top: 2rem;
+}
+
+/* Achievement Section */
+.achievement h2 {
+  padding-top: 0.5rem;
+}
+.achievement .row {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.achievement .row .lomba-img {
+  width: 40%;
+  height: auto;
+}
+
+.achievement .row .lomba-title {
+  margin-top: 1rem;
 }
 
 /* Footer */
