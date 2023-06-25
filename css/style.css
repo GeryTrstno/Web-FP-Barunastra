@@ -20,7 +20,7 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: var(--bg);
   color: #fff;
-  min-height: 2000px;
+  /* min-height: 10000px; */
 }
 
 .navbar {
@@ -109,6 +109,10 @@ body {
   line-height: 1.2;
 }
 
+.hero .content h1 span {
+  color: var(--primary);
+}
+
 .hero .content p {
   font-size: 1.6rem;
   margin-top: 1rem;
@@ -129,14 +133,21 @@ body {
 }
 
 /* About Section */
-.about {
+.about,
+.team {
   padding: 8rem 7% 1.4rem;
 }
 
-.about h2 {
+.about h2,
+.team h2 {
   text-align: center;
   font-size: 2.6rem;
   margin-bottom: 3rem;
+}
+
+.about h2 span,
+.team h2 span {
+  color: var(--primary);
 }
 
 .about .row {
@@ -158,9 +169,38 @@ body {
 
 .about .row .content p {
   margin-bottom: 0.8rem;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   font-weight: 100;
   line-height: 1.6;
+}
+
+/* Team Section */
+
+.team h2 {
+  margin-bottom: 1rem;
+}
+
+.team .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5rem;
+  justify-content: center;
+}
+
+.team .row .team-list {
+  text-align: center;
+  margin: auto 4rem;
+}
+
+.team .row .team-list img {
+  width: auto;
+  height: auto;
+}
+
+.team .row .team-list .team-title {
+  margin: 2rem auto 1rem;
+  font-size: 2.2rem;
+  padding-top: 3rem;
 }
 
 /* Footer */
